@@ -15,6 +15,6 @@ public:
 private:
 	int capacity;
 	int currentCount;
-	std::unordered_map<int, std::string> data;
 	std::list<int> useOrder;
+	std::unordered_map<int, std::pair<std::string, decltype(useOrder.begin())>> data;
 };
